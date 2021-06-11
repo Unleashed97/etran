@@ -1,0 +1,144 @@
+html, body{
+    padding: 0;
+    font-family: 'Century Gothic';
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* reset */
+p{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.popup{
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.header{
+    font-family: 'Neo Latina';
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo__img{
+    width: 30px;
+    height: 30px;
+}
+
+.logo__text{
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+.settings__icon{
+    width: 20px;
+    height: 20px;
+    fill: #9C19B3;
+    cursor: pointer;
+}
+
+.settings__icon:hover{
+    animation: rotation 2.5s linear infinite;
+}
+
+.tl{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Century Gothic';
+}
+
+.tl__input{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 16px;
+    padding: 10px 15px;
+    width: 100%;
+    outline: none;
+    font-family: 'Century Gothic';
+    transition: border .2s linear;
+}
+
+.tl__input:hover{
+    border-color: #9C19B3;
+}
+
+.tl__input:focus{
+    border-color: #9C19B3;
+}
+
+.tl__translation{
+    margin-top: 15px;
+}
+.tl__subtext{
+    font-family: 'Century Gothic';
+    font-style: italic;
+    font-size: 13px;
+}
+
+.tl__list{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tl__item{
+    font-family: 'Century Gothic';
+    font-size: 14px;
+    margin: 5px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tl__item-origin{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.add-icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.add-icon__background{
+    transition: fill .2s linear;
+}
+.add-icon__plus{
+    transition: fill .2s linear;
+}
+
+.add-icon:hover .add-icon__background{
+    fill: #9C19B3;
+}
+.add-icon:hover .add-icon__plus{
+    fill: #9C19B3;
+}
+/* Animation */
+@keyframes rotation{
+    from {transform: rotate(0deg)}
+    to { transform: rotate(359deg)}
+}
